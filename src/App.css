@@ -1,38 +1,108 @@
-.App {
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ flex-direction: column;
+}
+
+
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input{
+  margin: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cards{
+  margin: 1em;
+}
+.input{
+  border: 2px solid black;
+  padding: 0.8em;
+  border-radius: 8px;
+}
+
+.input button{
+  margin: 0.5em;
+  color: grey;
+  background-color:yellowgreen;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: .7em 0.4em;
+  cursor: pointer;
+}
+.input button:hover{
+    background-color: grey;
+    color: yellowgreen;
+    transition: 1s;
+}
+
+.input input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  padding: 0.4em;
+  font-size: 1.2em;
+  outline: none;
+}
+
+.items{
+  width: 21em;
+border: 2px solid black;
+background-color: gold;
+margin: 0.8em;
+border-radius: 7px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 0.8em;
+font-size: 1.2em;
+font-weight: bold;
+cursor: pointer;
+}
+.items:hover{
+  background-color: rgb(157, 207, 157);
+  transition: 1s;
+}
+
+.items input{
+  height: 1.2em;
+  cursor: pointer;
+  background: none;
+}
+
+.items button{
+  background:none;
+  border: none;
+  font-size: larger;
+  cursor: pointer;
+}
+.containerList{
+  border-top-style: dashed;
+}
+
+
+
+@media only screen and (max-width:400px) {
+  .container{
+    width: auto;
+  }
+  .items{
+    transform: scale(0.8);
+    width: 10em;
+  }
+  .input{
+    transform: scale(0.6);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
